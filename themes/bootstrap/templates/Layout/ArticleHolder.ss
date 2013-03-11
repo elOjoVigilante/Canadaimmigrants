@@ -4,11 +4,9 @@
         $Content       
         <div class="content">$Content</div>
     </article>
-
     <% loop Children %>
-    <% include ArticleTeaser %>
+    	<% include ArticleTeaser %>
 	<% end_loop %>
-
         $Form
 </div>
 <% include SideBar %>
