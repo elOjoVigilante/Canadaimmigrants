@@ -1,6 +1,3 @@
-<div class="sidebar size1of4">
-	<% include SideBar %>
-</div>
 <div class="content-container">
     <article>
     <% include BreadCrumbs %>
@@ -10,5 +7,4 @@
         </div>
         <div class="content">$Content</div>
     </article>
-        $Form
 </div>

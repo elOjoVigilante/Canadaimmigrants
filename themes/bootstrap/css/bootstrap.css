@@ -2180,6 +2180,7 @@ button.btn.small, input[type="submit"].btn.small {
   margin-left: 0;
   margin-bottom: 18px;
   list-style: none;
+  padding-left:133px;
 }
 .nav > li > a {
   display: block;
