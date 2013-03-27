@@ -43,7 +43,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/">Canada Immigrants</a>
+          <a class="brand" href="localhost:8888/canadaimmigrants/">Canada Immigrants</a>
 	  <% if Menu(1) %>
           <div class="nav-collapse">
             <ul class="nav">
@@ -63,13 +63,14 @@
 
       <hr>
 
-      <footer>
+      
+
+    </div>
+    <div class="footer">
         <p>&copy; Company $Now.Year | 
             <!-- Thanks for linking back -->
             <a href="/admin/">Login</a> | Silverstripe Bootstrap Theme by <a href="/">Visit Toowoomba</a></p>
-      </footer>
-
-    </div> <!-- /container -->
+      </div><!-- /container -->
 
     <!-- Le javascript
     ================================================== -->

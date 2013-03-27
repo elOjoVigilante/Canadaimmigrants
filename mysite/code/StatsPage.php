@@ -1,11 +1,12 @@
 <?php
-	class ArticlePage extends Page {
+	class StatsPage extends Page {
 		static $db = array(
 	        'Date' => 'Date',
+	        'Region' => 'Text',
+	        'Year' => 'Text',
+	        'Month' => 'Text',
 	        'Author' => 'Text'
 	    );
-		
-		static $icon = "themes/tutorial/images/treeicons/news-file.gif";
 		
 		public function getCMSFields() {
         $fields = parent::getCMSFields();
@@ -18,5 +19,5 @@
         return $fields;
     }
 	}
-	class ArticlePage_Controller extends Page_Controller {
+	class StatsPage_Controller extends Page_Controller {
 	}
