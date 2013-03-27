@@ -4,3 +4,144 @@
     display: inline !important;
     margin-bottom: 0px;
 }
+.line, /* line - Groups units on one horizontal line. Note: for mobile layout units may be stacked to avoid horizontal scrolling. */
+.lastUnit {
+	overflow:hidden;
+	*overflow:visible;
+	*zoom:1;
+	padding:0 10px;
+}
+.unit { /* unit - Base class which divides a line into sections (columns). */
+	float:left;
+	padding:0 10px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box; /* box-sizing:border-box; creates a box-model where 
+	padding and border are NOT added onto the width - they are included in the width, 
+	so a 200px wide element with 20px padding will be 200px, NOT 240px wide */
+}
+.unitRightv { /* Use this class if you want to offset a column eg: |--content(.unit)--|--content(.unit)--|--no-content--|--no-content--|--content(.unitRighttv)--| */
+	float:right;
+}
+
+/* sizeXofY - Extends unit. Indicates the fractional width of the unit, for example size3of4 would take up three quarters, or 75%, of the horizontal space. 
+The following fractions are supported: 1, 1/2, 1/3, 2/3, 1/4, 3/4, 1/5, 2/5, 3/5, 4/5 */
+/* It is possible to add more columns if you wish you will just have to add the fractions that are missing eg: .size1of6 {width:16.66666%;} */
+
+.size1of1 {
+	float:none;
+}
+.size1of2 {
+	width:50%;
+}
+.size1of3 {
+	width:33.33333%;
+}
+.size2of3 {
+	width:66.66666%;
+}
+.size1of4 {
+	width:25%;
+}
+.size3of4 {
+	width:75%;
+}
+.size1of5 {
+	width:20%;
+}
+.size2of5 {
+	width:40%;
+}
+.size3of5 {
+	width:60%;
+}
+.size4of5 {
+	width:80%;
+}
+.lastUnit { /* lastUnit - Extends unit. Applied to the last child of every line. */
+	float:none;
+	width:auto;
+	_position:relative; /* Bug fix for IE6 - Internet Explorer 6 and below wouldn't fail on properties that were prefixed with non-alphanumeric characters. 
+	meaning that anything prefixed with _ wouldn't be picked up by any other browsers */
+	_left:-3px;
+	_margin-right:-3px;
+}
+.content-container {
+	    float: right;
+	    width: 75%;
+	    padding-bottom:75px;
+	}
+	.no-sidebar .content-container {
+	    float: left;
+	    width:100%; /* makes content container full width when there is no sidebar */
+	}
+	.sidebar { /* this is the sidebar element */
+	    margin-top: 12px;
+	    float: left;
+	    min-height: 100%;
+	    position: relative;
+	}
+	.no-sidebar .sidebar {
+		display: none;
+	}
+	/* FOOTER */
+.footer {
+    color: #999;
+    background: #ededed;
+    padding: 20px 0;
+    font-size: 11px;
+    line-height: 22px;
+    text-align: center;
+}
+	.footer a {
+	    color: #999;
+	}
+	.footer a:hover {
+	    color: #B90000;
+	}
+	.footer .left {
+	    float: left;
+	    color: #000;
+	    display: block;
+	    margin-bottom: 10px;
+	}
+	.footer .right {
+	    float: right;
+	    display: block;
+	    margin-bottom: 10px;
+	}
+	.footer span {
+	    padding: 0 3px;
+	    color: #bbb;
+	}
+	.footer .primary,
+	.footer .primary ul {
+	    display: inline;
+	    margin: 0;
+	    padding: 0;
+	}
+		.footer .primary li {
+		    display: inline;
+		}
+	.ie6 .footer .primary li,
+	.ie7 .footer .primary li { /* this is a bugfix for ie6/7 */
+	    display: inline;
+	    zoom: 1;
+	    margin-right: 10px;
+	}
+	.footer .primary li:after { /* adds '/' to separate the footer navigation items */
+	    padding: 0 3px 0 5px;
+	    content: '/';
+	    color: #999;
+	}
+	.footer .primary li:last-child:after {
+	    content: ''; /* makes sure last nav item doesn't have a '/' following it */
+	}
+	.footer .arrow {
+	    padding: 0 8px 0 5px;
+	    color: #b80000;
+	    font-size: 13px;
+	}
+	.footer .primary .nav-open-button {
+	    display: none; /* the footer includes the primary nav include - this makes sure the nav open close button doesn't show up */
+	}
