@@ -1,6 +1,6 @@
 <?php
 	class ArticleHolder extends Page {
-	    static $allowed_children = array('ArticlePage','StatsHolder','ArticleHolder');
+	    static $allowed_children = array('ArticlePage','StatsHolder','ArticleHolder','StatsPage');
 		
 		static $icon = "themes/tutorial/images/treeicons/news-file.gif";
 	}

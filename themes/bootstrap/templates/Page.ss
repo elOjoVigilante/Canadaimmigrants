@@ -19,7 +19,7 @@
     </style>
     <% require themedCSS(bootstrap-responsive) %>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- Chicken Wings Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -43,7 +43,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="localhost:8888/canadaimmigrants/">Canada Immigrants</a>
+          <a href="http://localhost:8888/canadaimmigrants/index.php"><img class="brand" src="assets/canadaimmigrantslogo.png"></a>
 	  <% if Menu(1) %>
           <div class="nav-collapse">
             <ul class="nav">
@@ -67,9 +67,10 @@
 
     </div>
     <div class="footer">
-        <p>&copy; Company $Now.Year | 
+        <p>&copy; $Now.Year The Canadian Magazine of Immigration
             <!-- Thanks for linking back -->
-            <a href="/admin/">Login</a> | Silverstripe Bootstrap Theme by <a href="/">Visit Toowoomba</a></p>
+            <a href="/admin/">About |</a> <a href="/admin/">Advertise |</a> <a href="/admin/">Contact |</a> 
+            <a href="/admin/">Disclaimer |</a></p>
       </div><!-- /container -->
 
     <!-- Le javascript

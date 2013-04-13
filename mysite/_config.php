@@ -13,6 +13,13 @@ $databaseConfig = array(
 	"path" => '',
 );
 
+	// Adds commenting to the class SiteTree (all Pages) but require the user to login and comments
+	// are moderated
+	Commenting::add('Foo', array(
+		'require_moderation' => true,
+		'require_login' => true
+	));
+
 MySQLDatabase::set_connection_charset('utf8');
 
 // Set the current theme. More themes can be downloaded from

@@ -7,6 +7,9 @@
 				<p>$SiteConfig.Tagline</p>
 				<% end_if %>
 			</a>
+
+		</div>
+	</div>
 			<% if $SearchForm %>
 				<span class="search-dropdown-icon">L</span>
 				<div class="search-bar">
@@ -14,6 +17,4 @@
 				</div>
 			<% end_if %>
 			<% include Navigation %>
-		</div>
-	</div>
 </header>

@@ -3,7 +3,12 @@
 		static $db = array(
 	        'Date' => 'Date',
 	        'Author' => 'Text'
+	        
 	    );
+		
+static $has_one = array(
+        'Photo' => 'Image'
+    );
 		
 		static $icon = "themes/tutorial/images/treeicons/news-file.gif";
 		
@@ -14,6 +19,8 @@
         $dateField->setConfig('showcalendar', true);
         $fields->addFieldToTab('Root.Main', $dateField, 'Content');
         $fields->addFieldToTab('Root.Main', new TextField('Author'), 'Content');
+        $fields->addFieldToTab("Root.Images", new UploadField('Photo'));
+      
          
         return $fields;
     }
