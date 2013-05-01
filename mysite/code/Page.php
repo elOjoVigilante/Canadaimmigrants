@@ -2,11 +2,17 @@
 class Page extends SiteTree {
 
 	public static $db = array(
+	'Footer' => 'Boolean'
 	);
 
 	public static $has_one = array(
 	);
 
+	function getSettingsFields () {
+		$fields = parent::getSettingsFields();
+		$fields->addFieldToTab("Root.Settings", new CheckboxField('Footer'));
+		return $fields;
+	}
 }
 class Page_Controller extends ContentController {
 
@@ -39,5 +45,10 @@ class Page_Controller extends ContentController {
 		Requirements::themedCSS('typography'); 
 		Requirements::themedCSS('form'); 
 	}
+	
+	/** public function AllFooter() {
+	return SiteTree::get()->filter('Footer', TRUE);
+	}
+	*/
 
 }

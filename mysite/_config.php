@@ -34,4 +34,7 @@ if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 
 FulltextSearchable::enable();
 
+<<<<<<< HEAD
 Security::setDefaultAdmin("admin","admin");
+=======
+>>>>>>> 40f8a32097f33c94c1c80acd2c6afd3f8c4e31cb
