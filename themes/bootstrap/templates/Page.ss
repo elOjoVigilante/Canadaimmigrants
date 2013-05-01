@@ -69,8 +69,13 @@
     <div class="footer">
         <p>&copy; $Now.Year The Canadian Magazine of Immigration
             <!-- Thanks for linking back -->
-            <a href="/admin/">About |</a> <a href="/admin/">Advertise |</a> <a href="/admin/">Contact |</a> 
-            <a href="/admin/">Disclaimer |</a></p>
+            <!-- <a href="/admin/">About |</a> <a href="/admin/">Advertise |</a> <a href="/admin/">Contact |</a> 
+            <a href="/admin/">Disclaimer |</a> -->
+            
+            
+            <% loop $Level(0) %>
+              <a href="/admin/">$MenuTitle |</a>
+              <% end_loop %></p>
       </div><!-- /container -->
 
     <!-- Le javascript

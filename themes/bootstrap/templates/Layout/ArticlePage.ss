@@ -15,7 +15,9 @@
     	<h1>$Title</h1>
         <div class="news-details">
             <p align="left">Posted by $Author on $Date.Nice</p>
+            <% if $photo %>
             $photo
+            <% end_if %>
         </div>
         <div class="content" >$Content</div>
        
